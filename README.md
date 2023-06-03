@@ -1,11 +1,6 @@
-This README is currently only available in Japanese.
-Please [use machine translation](https://github-com.translate.goog/hoshi-vc/hoshi-vc/blob/main/README.md?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp) if necessary.
-
-<!-- Note: Translations are welcome. (although this documentation is still incomplete...) -->
-
 <br>
 <div align="center">
-  <h1>Hoshi VC</h1>
+  <h1>Concat VC</h1>
   <p>A Personal Experiment in Real-Time Voice Conversion</p>
   <p>学習が高速なリアルタイム声質変換を作ってみる個人的な実験</p>
 </div>
@@ -19,18 +14,16 @@ Please [use machine translation](https://github-com.translate.goog/hoshi-vc/hosh
 Linux や WSL2 での開発を想定しています。
 
 ```bash
-# Install `asdf` and `pnpm` before you start if you haven't already.
+# Install `asdf` before you start if you haven't already.
 # asdf: https://asdf-vm.com/guide/getting-started.html
-# pnpm: https://pnpm.io/installation
 
 # Clone this repository.
-git clone https://github.com/hoshi-vc/hoshi-vc.git
-cd hoshi-vc
+git clone https://github.com/omasakun/concat-vc.git
+cd concat-vc
 
 # Install the required tools and packages.
 asdf install
 pdm  install -G :all
-pnpm install
 
 # Now you are ready to go!
 source .venv/bin/activate

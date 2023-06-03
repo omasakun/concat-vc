@@ -169,7 +169,7 @@ fragment_vc = FragmentVCModule(warmup_steps=500, total_steps=250000, milestones=
 intra_datamodule = IntraDomainDataModule(frames=256, n_samples=10, batch_size=8, num_workers=8)
 
 (DATA_DIR / "wandb").mkdir(parents=True, exist_ok=True)
-wandb_logger = WandbLogger(entity="hoshi-vc", project="attempt03", save_dir=DATA_DIR)
+wandb_logger = WandbLogger(project="attempt03", save_dir=DATA_DIR)
 run_name = wandb_logger.experiment.name
 
 checkpoint_callback = C.ModelCheckpoint(
